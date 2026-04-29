@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Referral links">
+    <title>Referrals Links</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">Referall Links</p>
+        <!--</1><h1>Referrals Metro</h1>-->
+      </div>
+      <p class="header-copy">Click on the categories listed bellow and get your referral link</p>
+    </header>
+
+    <main>
+      <section class="tile-grid" id="tileGrid" aria-label="Categorias de referral"></section>
+    </main>
+
+    <section class="overlay" id="categoryOverlay" aria-hidden="true">
+      <div class="overlay-panel" role="dialog" aria-modal="true" aria-labelledby="overlayTitle" tabindex="-1">
+        <button class="close-button" id="closeOverlay" type="button" aria-label="Fechar categoria">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="overlay-heading">
+          <div class="overlay-icon" id="overlayIcon" aria-hidden="true"></div>
+          <div>
+            <h2 id="overlayTitle"></h2>
+            <p id="overlayDescription"></p>
+          </div>
+        </div>
+
+        <div class="links-list" id="linksList"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
